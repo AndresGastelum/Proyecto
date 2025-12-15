@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header con vinculos-->
+    <header class="header">
+    <div class="logo">
+        <a href="../menu.html" style="color: white; text-decoration: none;">Cool Center</a>
+    </div>
+    <div class="nav-icons">
+        
+        <a href="../Carrito/carrito.html" class="nav-item" style="color: white; text-decoration: none; position: relative;">
+            <i class="fas fa-shopping-cart" style="font-size: 1.2em;"></i> 
+            <span class="cart-badge">0</span> 
+        </a>
+
+        <a href="../Contacto/contacto.html" class="nav-item" style="color: white; text-decoration: none;">Contacto</a>
+        
+        <div class="nav-item account-menu-toggle" id="accountToggle">
+            Cuenta
+            <i class="fas fa-user-circle user-icon"></i>
+            
+            <div id="dropdownMenu" class="dropdown-menu">
+                </div>
+        </div> 
+        </div>
+</header>
+    <!-- Div en donde esta la estructura de la informacion de productos-->
+    <div class="main-content">
+        <h2 class="product-details-title">Detalles del producto:</h2>
+        
+        <div class="top-section">
+            <div class="action-area">
+                <button class="add-to-cart-button">Agregar al carrito</button>
+            </div>
+            
+            <div class="details-image-container">
+                <img id="product-image" src="" alt="Imagen del producto">
+            </div>
+        </div>
+        <div class="details-container">
+            
+            <div class="details-box">
+                <div class="details-box-label">Nombre del producto:</div>
+                <div class="details-box-value" id="nombre"></div>
+            </div>
+            
+            <div class="details-box">
+                <div class="details-box-label">Precio:</div>
+                <div class="details-box-value" id="precio"></div>
+            </div>
+            
+            <div class="details-box">
+                <div class="details-box-label">Fecha de lanzamiento:</div>
+                <div class="details-box-value" id="fecha_lanzamiento"></div>
+            </div>
+
+            <div class="details-box">
+                <div class="details-box-label">Proveedor:</div>
+                <div class="details-box-value" id="fabricante"></div>
+            </div>
+
+            <div class="details-box">
+                <div class="details-box-label">Tamaño:</div>
+                <div class="details-box-value" id="dimensiones_peso"></div>
+            </div>
+            
+            <div class="details-box">
+                <div class="details-box-label">Fecha de entrega:</div>
+                <div class="details-box-value" id="tiempo_envio"></div>
+            </div>
+            
+            <div class="details-box full-width">
+                <div class="details-box-label">Descripción:</div>
+                <div class="details-box-value" id="descripcion" style="font-size: 1.2em;"></div>
+            </div>
+
+            <div class="details-box full-width">
+                <div class="details-box-label">Categorías:</div>
+                <div class="details-box-value" id="etiquetas" style="font-size: 1.2em;"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

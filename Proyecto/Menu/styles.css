@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+        /*Encabezado*/
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #000;
+            color: white;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .nav-icons {
+            display: flex;
+            gap: 30px;
+        }
+        .nav-item {
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer; 
+        }
+        .user-icon {
+            font-size: 1.5em;
+            margin-left: 5px;
+        }
+        /*Contenido*/
+        .main-content {
+            padding: 30px;
+            text-align: center;
+        }
+        .product-list-title {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+        }
+        .products-grid {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap; 
+        }
+        /* Cartas de productos */
+        .product-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            width: 300px;
+            min-height: 300px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        /*Imagen */
+        .product-image {
+            max-width: 90%;
+            height: 200px; 
+            object-fit: contain; 
+            border-radius: 10px;
+            margin: 0 auto 15px auto;
+        }
+        .product-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            overflow: hidden; 
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .product-price {
+            color: #333;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .details-button {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            background-color: #000;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .details-button:hover {
+            background-color: #333;
+        }
+        /*Cuenta*/
+        .account-menu-toggle {
+            position: relative; 
+            cursor: pointer;
+        }
+        .dropdown-menu {
+            position: absolute;
+            top: 100%; 
+            right: 0;
+            min-width: 250px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            padding: 15px;
+            display: none; 
+            transition: opacity 0.2s, transform 0.2s;
+            transform-origin: top right;
+        }
+        .dropdown-menu-content p {
+            margin: 5px 0;
+            color: #333;
+            font-size: 0.9em;
+        }
+        .dropdown-menu-header {
+            display: flex;
+            align-items: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+        }
+        .dropdown-menu-header i {
+            font-size: 2.5em;
+            color: #3498db;
+            margin-right: 10px;
+        }
+        .logout-button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+        }
